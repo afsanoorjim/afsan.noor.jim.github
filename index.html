@@ -3,27 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afsan Noor Jim</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-logo">Afsan Noor Jim</div>
-        <div class="nav-links">
+    <header>
+        <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#home">About me</a></li>
-                <li><a href="#home">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm a Full-Stack Developer</h1>
+            <p>Building modern, scalable, and responsive websites and web applications.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
         </div>
-        <div class="nav-subscription">
-            <button>Subscribe</button>
-        </div>
-    </nav>
-    <section class="featured">
-        <div class="f-left"></div>
-        <div class="f-right"></div>
     </section>
-    <script src="static/js/script.js"></script>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate full-stack web developer with experience in building dynamic websites and applications. With expertise in HTML5, CSS3, JavaScript, Django, and MySQL, I deliver solutions that are both efficient and visually engaging.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-set">
+            <div class="skill">
+                <h3>Frontend</h3>
+                <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+            </div>
+            <div class="skill">
+                <h3>Backend</h3>
+                <p>Django, Python, MySQL</p>
+            </div>
+            <div class="skill">
+                <h3>Tools</h3>
+                <p>Git, GitHub, VS Code, Postman</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>A full-stack e-commerce web application built with Django and Bootstrap.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>A responsive portfolio website developed using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3</h3>
+                <p>Custom backend API for data management, built using Django and integrated with MySQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="submit">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 My Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
